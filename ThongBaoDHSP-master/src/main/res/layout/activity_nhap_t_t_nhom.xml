@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainNhapTTNhom">
+    <TextView
+        android:id="@+id/text"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tao Nhom "
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        tools:ignore="MissingConstraints" />
+    <EditText
+        android:id="@+id/nhaptennhom"
+        android:hint="Nhap ten nhom "
+        android:layout_margin="10dp"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/text"/>
+    <TextView
+        android:id="@+id/chutich"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chu Tich"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/nhaptennhom"
+        tools:ignore="MissingConstraints" />
+    <EditText
+        android:id="@+id/nhapchutich"
+        android:hint="Nhap ten chu tich"
+        android:layout_margin="10dp"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/chutich"/>
+    <TextView
+        android:id="@+id/themthanhvien"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thanh Vien"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/nhapchutich"
+        tools:ignore="MissingConstraints" />
+    <EditText
+        android:id="@+id/nhapthanhvien"
+        android:hint="Nhap thanh vien"
+        android:layout_margin="10dp"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/themthanhvien"/>
+    <Button
+        android:id="@+id/taonhom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Huy Tao"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nhapthanhvien"/>
+    <Button
+        android:id="@+id/huytaonhom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tao Nhom"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintRight_toLeftOf="@+id/taonhom"
+        app:layout_constraintTop_toBottomOf="@id/nhapthanhvien"/>
+    <Button
+        android:id="@+id/buttonHome4.1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="5dp"
+        android:text="TinTuc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+    <Button
+        android:id="@+id/buttonNhom4.1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5dp"
+        android:text="Nhom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/buttonHome4.1" />
+    <Button
+        android:id="@+id/buttonTB4.1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5dp"
+        android:text="TaoTB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/buttonNhom4.1"/>
+    <Button
+        android:id="@+id/buttonEdit4.1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="10dp"
+        android:text="CDat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/buttonTB4.1"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
